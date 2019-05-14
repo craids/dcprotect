@@ -1,0 +1,79 @@
+﻿Build started 7/11/2013 4:19:15 PM.
+     1>Project "D:\dcprotect\dcpatch\dcpatch.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\dcpatch.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\dcpatch.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DCPatcher.cpp pespec\BoundImportDirectory.cpp pespec\buffer\InputBuffer.cpp pespec\buffer\OutputBuffer.cpp pespec\ComHeaderDirectory.cpp pespec\DebugDirectory.cpp pespec\ExportDirectory.cpp pespec\IatDirectory.cpp pespec\MzHeader.cpp pespec\PeFile.cpp pespec\PeHeader.cpp pespec\PeLibAux.cpp pespec\RelocationsDirectory.cpp pespec\ResourceDirectory.cpp RunPatcher.cpp
+         DCPatcher.cpp
+         BoundImportDirectory.cpp
+         InputBuffer.cpp
+         OutputBuffer.cpp
+         ComHeaderDirectory.cpp
+         DebugDirectory.cpp
+         ExportDirectory.cpp
+         IatDirectory.cpp
+         MzHeader.cpp
+         PeFile.cpp
+         PeHeader.cpp
+         PeLibAux.cpp
+     1>pespec\PeLibAux.cpp(33): warning C4244: 'return' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>pespec\PeLibAux.cpp(38): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>pespec\PeLibAux.cpp(40): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>pespec\PeLibAux.cpp(47): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>pespec\PeLibAux.cpp(49): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>pespec\PeLibAux.cpp(56): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>pespec\PeLibAux.cpp(58): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+         RelocationsDirectory.cpp
+         ResourceDirectory.cpp
+     1>pespec\ResourceDirectory.cpp(488): warning C4244: 'argument' : conversion from 'wchar_t' to 'char', possible loss of data
+         RunPatcher.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt disasm\decoder.c disasm\distorm.c disasm\instructions.c disasm\insts.c disasm\mnemonics.c disasm\operands.c disasm\prefix.c disasm\textdefs.c disasm\wstring.c
+         decoder.c
+         distorm.c
+         instructions.c
+         insts.c
+         mnemonics.c
+         operands.c
+         prefix.c
+         textdefs.c
+         wstring.c
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\dcprotect\Release\dcpatch.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\dcpatch.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\dcprotect\Release\dcpatch.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\dcprotect\Release\dcpatch.lib" /MACHINE:X86 Release\DCPatcher.obj
+         Release\BoundImportDirectory.obj
+         Release\InputBuffer.obj
+         Release\OutputBuffer.obj
+         Release\ComHeaderDirectory.obj
+         Release\DebugDirectory.obj
+         Release\ExportDirectory.obj
+         Release\IatDirectory.obj
+         Release\MzHeader.obj
+         Release\PeFile.obj
+         Release\PeHeader.obj
+         Release\PeLibAux.obj
+         Release\RelocationsDirectory.obj
+         Release\ResourceDirectory.obj
+         Release\RunPatcher.obj
+         Release\decoder.obj
+         Release\distorm.obj
+         Release\instructions.obj
+         Release\insts.obj
+         Release\mnemonics.obj
+         Release\operands.obj
+         Release\prefix.obj
+         Release\textdefs.obj
+         Release\wstring.obj
+         Generating code
+         Finished generating code
+         dcpatch.vcxproj -> D:\dcprotect\Release\dcpatch.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\dcprotect\Release\dcpatch.exe;#1" /manifest Release\dcpatch.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\dcpatch.unsuccessfulbuild".
+         Touching "Release\dcpatch.lastbuildstate".
+     1>Done Building Project "D:\dcprotect\dcpatch\dcpatch.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.31

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\disasm">
+      <UniqueIdentifier>{3c86f878-bae3-4140-8f05-f30fd49f0967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\disasm">
+      <UniqueIdentifier>{02ab233d-4b91-458f-bf88-f1a195a77d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pespec">
+      <UniqueIdentifier>{ce46faff-9a4d-4f0d-91dd-487ae8ad2fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pespec\buffer">
+      <UniqueIdentifier>{8a5066b0-302f-43fa-969d-7a3e45cba23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pespec">
+      <UniqueIdentifier>{ae3f8c5c-68a7-45d2-9a7c-0d852977ed21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pespec\buffer">
+      <UniqueIdentifier>{41bc8e09-3503-48d0-860f-aaea7477d85c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="disasm\wstring.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\decoder.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\distorm.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\instructions.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\insts.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\mnemonics.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\operands.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\prefix.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\textdefs.c">
+      <Filter>Source Files\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="RunPatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DCPatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\PeHeader.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\PeLibAux.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\RelocationsDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\ResourceDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\BoundImportDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\ComHeaderDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\DebugDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\ExportDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\IatDirectory.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\MzHeader.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\PeFile.cpp">
+      <Filter>Source Files\pespec</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\buffer\OutputBuffer.cpp">
+      <Filter>Source Files\pespec\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="pespec\buffer\InputBuffer.cpp">
+      <Filter>Source Files\pespec\buffer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="disasm\wstring.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\x86defs.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\config.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\decoder.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\distorm.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\instructions.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\insts.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\mnemonics.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\operands.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\prefix.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\textdefs.h">
+      <Filter>Header Files\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="DCPatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\PeFile.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\PeHeader.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\PeLib.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\PeLibAux.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\PeLibInc.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\RelocationsDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\ResourceDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\TlsDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\BoundImportDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\ComHeaderDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\DebugDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\ExportDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\IatDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\ImportDirectory.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\MzHeader.h">
+      <Filter>Header Files\pespec</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\buffer\InputBuffer.h">
+      <Filter>Header Files\pespec\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="pespec\buffer\OutputBuffer.h">
+      <Filter>Header Files\pespec\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DCPStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

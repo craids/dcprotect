@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D31854B9-4EA3-4BE7-A7C5-FAB7E79D4881}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>dcpatch</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DCPatcher.cpp" />
+    <ClCompile Include="pespec\BoundImportDirectory.cpp" />
+    <ClCompile Include="pespec\buffer\InputBuffer.cpp" />
+    <ClCompile Include="pespec\buffer\OutputBuffer.cpp" />
+    <ClCompile Include="pespec\ComHeaderDirectory.cpp" />
+    <ClCompile Include="pespec\DebugDirectory.cpp" />
+    <ClCompile Include="pespec\ExportDirectory.cpp" />
+    <ClCompile Include="pespec\IatDirectory.cpp" />
+    <ClCompile Include="pespec\MzHeader.cpp" />
+    <ClCompile Include="pespec\PeFile.cpp" />
+    <ClCompile Include="pespec\PeHeader.cpp" />
+    <ClCompile Include="pespec\PeLibAux.cpp" />
+    <ClCompile Include="pespec\RelocationsDirectory.cpp" />
+    <ClCompile Include="pespec\ResourceDirectory.cpp" />
+    <ClCompile Include="RunPatcher.cpp" />
+    <ClCompile Include="disasm\decoder.c" />
+    <ClCompile Include="disasm\distorm.c" />
+    <ClCompile Include="disasm\instructions.c" />
+    <ClCompile Include="disasm\insts.c" />
+    <ClCompile Include="disasm\mnemonics.c" />
+    <ClCompile Include="disasm\operands.c" />
+    <ClCompile Include="disasm\prefix.c" />
+    <ClCompile Include="disasm\textdefs.c" />
+    <ClCompile Include="disasm\wstring.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DCPatcher.h" />
+    <ClInclude Include="DCPStructs.h" />
+    <ClInclude Include="disasm\config.h" />
+    <ClInclude Include="disasm\decoder.h" />
+    <ClInclude Include="disasm\distorm.h" />
+    <ClInclude Include="disasm\instructions.h" />
+    <ClInclude Include="disasm\insts.h" />
+    <ClInclude Include="disasm\mnemonics.h" />
+    <ClInclude Include="disasm\operands.h" />
+    <ClInclude Include="disasm\prefix.h" />
+    <ClInclude Include="disasm\textdefs.h" />
+    <ClInclude Include="disasm\wstring.h" />
+    <ClInclude Include="disasm\x86defs.h" />
+    <ClInclude Include="pespec\BoundImportDirectory.h" />
+    <ClInclude Include="pespec\buffer\InputBuffer.h" />
+    <ClInclude Include="pespec\buffer\OutputBuffer.h" />
+    <ClInclude Include="pespec\ComHeaderDirectory.h" />
+    <ClInclude Include="pespec\DebugDirectory.h" />
+    <ClInclude Include="pespec\ExportDirectory.h" />
+    <ClInclude Include="pespec\IatDirectory.h" />
+    <ClInclude Include="pespec\ImportDirectory.h" />
+    <ClInclude Include="pespec\MzHeader.h" />
+    <ClInclude Include="pespec\PeFile.h" />
+    <ClInclude Include="pespec\PeHeader.h" />
+    <ClInclude Include="pespec\PeLib.h" />
+    <ClInclude Include="pespec\PeLibAux.h" />
+    <ClInclude Include="pespec\PeLibInc.h" />
+    <ClInclude Include="pespec\RelocationsDirectory.h" />
+    <ClInclude Include="pespec\ResourceDirectory.h" />
+    <ClInclude Include="pespec\TlsDirectory.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

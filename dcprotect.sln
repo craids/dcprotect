@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dcprotect", "dcprotect\dcprotect.vcxproj", "{7B2B195F-4957-4999-87F5-E3210FF581DE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dcpatch", "dcpatch\dcpatch.vcxproj", "{D31854B9-4EA3-4BE7-A7C5-FAB7E79D4881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B2B195F-4957-4999-87F5-E3210FF581DE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B2B195F-4957-4999-87F5-E3210FF581DE}.Debug|Win32.Build.0 = Debug|Win32
+		{7B2B195F-4957-4999-87F5-E3210FF581DE}.Release|Win32.ActiveCfg = Release|Win32
+		{7B2B195F-4957-4999-87F5-E3210FF581DE}.Release|Win32.Build.0 = Release|Win32
+		{D31854B9-4EA3-4BE7-A7C5-FAB7E79D4881}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D31854B9-4EA3-4BE7-A7C5-FAB7E79D4881}.Debug|Win32.Build.0 = Debug|Win32
+		{D31854B9-4EA3-4BE7-A7C5-FAB7E79D4881}.Release|Win32.ActiveCfg = Release|Win32
+		{D31854B9-4EA3-4BE7-A7C5-FAB7E79D4881}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
